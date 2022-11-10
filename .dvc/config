@@ -1,0 +1,13 @@
+[core]
+    remote = ssh-storage
+['remote "myremote"']
+    url = /tmp/cmf/example_get_started/dvc_remote
+['remote "minio"']
+    url = s3://dvc-art
+    endpointurl = http://localhost:9000
+    access_key_id = minioadmin
+    secret_access_key = minioadmin
+['remote "ssh-storage"']
+    url = ssh://127.0.0.1/home/varkha/sshremote
+    user = varkha
+    port = 22
